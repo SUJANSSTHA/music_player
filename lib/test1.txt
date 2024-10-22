@@ -1,0 +1,33 @@
+import 'package:flutter/material.dart';
+import 'package:audioplayers/audioplayers.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Test Audio')),
+        body: Center(
+          child: ElevatedButton(
+            onPressed: () async {
+              final player = AudioPlayer();
+              try {
+                await player.play(AssetSource('audio/music.mp3'));
+                print("Audio played successfully");
+              } catch (e) {
+                print("Error playing audio: $e");
+              }
+            },
+            child: const Text('Play Audio'),
+          ),
+        ),
+      ),
+    );
+  }
+}

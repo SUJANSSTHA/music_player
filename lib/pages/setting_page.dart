@@ -16,7 +16,7 @@ class _SettingPageState extends State<SettingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
         appBar: AppBar(
           // backgroundColor: Theme.of(context).colorScheme.primary,
                 // backgroundColor: Theme.of(context).colorScheme.surface,
