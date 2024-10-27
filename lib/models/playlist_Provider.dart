@@ -7,16 +7,16 @@ class PlaylistProvider extends ChangeNotifier{
   final List<Song> _playlist = [
     //! song
     Song(
-      songName: "Matina Maicha",
+      songName: "Temi benako zevan",
       artistName: "Swoopna Suman",
       albumArtImagePath: "assets/images/image1.png",
       audioPath: "audio/music.mp3"
       ),
     Song(
-      songName: "Acid RAp",
-      artistName: "Neyo",
-      albumArtImagePath: "assets/images/image2.png",
-      audioPath: "audio/music.mp3"
+      songName: "Matina",
+      artistName: "Preezol",
+      albumArtImagePath: "assets/images/matina.png",
+      audioPath: "audio/matinamaicha.mp3"
       ),
     Song(
       songName: "Dekha Ek Khwab",
